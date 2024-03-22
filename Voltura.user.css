@@ -1,0 +1,244 @@
+@-moz-document domain("revolt.chat") {
+/**
+ * @name Voltura
+ * @author Vozer
+ * @version 02.2024
+ * @description A Revolt theme inspired by Apple's Human Design Guidelines.
+ * @source https://github.com/SlippingGitty/Voltura
+ * @website https://slippinggitty.github.io/
+*/
+
+/*
+                    'c.          revolt@RevoltTheme.local 
+                 ,xNMM.          ----------------------- 
+               .OMMMMo           OS: Voltura 02.24 css 
+               OMMM0,            Host: revolt0,1 
+     .;loddo:' loolloddol;.      Kernel: 6.0.17
+   cKMMMMMMMMMMNWMMMMMMMMMM0:    Uptime: 12 hours, 48 mins 
+ .KMMMMMMMMMMMMMMMMMMMMMMMWd.    Packages: 0519 (plugins) 
+ XMMMMMMMMMMMMMMMMMMMMMMMX.      Shell: Stylus, Revolt,
+;MMMMMMMMMMMMMMMMMMMMMMMM:              Revolt Desktop, Revolt Mobile 
+:MMMMMMMMMMMMMMMMMMMMMMMM:       DE: ConnectWithTheWorld
+.MMMMMMMMMMMMMMMMMMMMMMMMX.      WM: Vozer
+ kMMMMMMMMMMMMMMMMMMMMMMMMWd.    WM Theme: Redvolt
+ .XMMMMMMMMMMMMMMMMMMMMMMMMMMk   Font: San Fransisco Display
+  .XMMMMMMMMMMMMMMMMMMMMMMMMK.   Memory: #0272MiB / 8192MiB 
+    kMMMMMMMMMMMMMMMMMMMMMMd      
+     ;KMMMMMMMWXXWMMMMMMMk.       
+       .cooc,.    .,coo:.       
+*/
+
+
+
+/* 
+/////////////////////////
+
+Using surCord varriables allows all of the custom color palletes and accents used for the surCord theme 
+to also be used here on Voltura. There is a few hold-overs from said theme bellow that haven't or won't
+be used. I'm only keeping those here just for prosperity, really.
+
+////////////////////////*/
+
+/* Palletes */
+:root {
+    --surCordBackground: rgb(31, 30, 30);
+    --surCordBackground2: rgb(42, 40, 44);
+    --surCordTextBackground: rgb(30, 30, 30);
+    --surcordFriendsBackground: rgb(33, 31, 35);
+    --surCordFriends: rgb(40, 38, 42);
+    --surCordActiveNow: rgba(88, 84, 85, 0.276);
+    --surCordGuilds: rgb(42, 40, 44);
+    --surCordTitleBar: rgb(55, 53, 55);
+    --surCordSearch: rgb(53, 51, 55);
+    --surCordHover: rgb(65, 63, 66);
+    --surCordBorder: rgb(78, 78, 81);
+}
+
+/* Accents */
+:root {
+    --accent: rgb(26, 129, 251);
+    --accent-hover: rgba(26, 129, 251, 0.977);
+    --accent-selected: rgb(26, 129, 251, 0.612);
+    --accent-focused: rgb(26, 129, 251, 0.200);
+}
+
+/*
+-----------Font---------
+> Uncomment the font-weight to enable San Fransisco Bold
+> Designed by Apple in California - https://developer.apple.com/fonts/ 
+*/
+@import url("https://Cinnab0nBak3ry.github.io/AppleFontsCSS/Apple-fonts.css");
+
+/* Etc */
+:root {
+    --font: SF Pro Display !important;
+    --primary-background: var(--surCordBackground);
+    --message-box: --surCordTextBackground;
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: #ca525a00;
+}
+
+}
+
+@-moz-document domain("revolt.chat") {
+/* 
+01110110 01101111 01101100 01110100 01110101 01110010 01100001  01101001 01110011  01100001  01110100 01101000 01100101 01101101 01100101  01100110 01101111 01110010  01110010 01100101 01110110 01101111 01101100 01110100 
+                                                                                                                        
+`8.`888b           ,8'  ,o888888o.     8 8888   8888888 8888888888 8 8888      88 8 888888888o.            .8.          
+ `8.`888b         ,8'. 8888     `88.   8 8888         8 8888       8 8888      88 8 8888    `88.          .888.         
+  `8.`888b       ,8',8 8888       `8b  8 8888         8 8888       8 8888      88 8 8888     `88         :88888.        
+   `8.`888b     ,8' 88 8888        `8b 8 8888         8 8888       8 8888      88 8 8888     ,88        . `88888.       
+    `8.`888b   ,8'  88 8888         88 8 8888         8 8888       8 8888      88 8 8888.   ,88'       .8. `88888.      
+     `8.`888b ,8'   88 8888         88 8 8888         8 8888       8 8888      88 8 888888888P'       .8`8. `88888.     
+      `8.`888b8'    88 8888        ,8P 8 8888         8 8888       8 8888      88 8 8888`8b          .8' `8. `88888.    
+       `8.`888'     `8 8888       ,8P  8 8888         8 8888       ` 8888     ,8P 8 8888 `8b.       .8'   `8. `88888.   
+        `8.`8'       ` 8888     ,88'   8 8888         8 8888         8888   ,d8P  8 8888   `8b.    .888888888. `88888.  
+         `8.`           `8888888P'     8 888888888888 8 8888          `Y88888P'   8 8888     `88. .8'       `8. `88888. 
+
+01100001 01101100 01110011 01101111  01100011 01101000 01100101 01100011 01101011  01101111 01110101 01110100  01101110 01101111 01110100 01101000 01100101 01101101 01100101 
+*/
+
+
+[class="Header-sc-ujh2d9-0 fPzJRX"], [class="Header-sc-ujh2d9-0 fEKFaQ"] {
+    background: var(--surCordTitleBar);
+    border-bottom: 0.5px solid #000;
+    height: 40px;
+}
+.fEKFaQ{
+    border-radius: 1px;
+    border-bottom: black 1px solid;
+    border-left: black 1px solid;
+}
+
+[class="MessageBox__Base-sc-jul4fa-0 jBEnry"] {
+    border-radius: 50px;
+    margin: 5px 20px 10px 20px;
+    border: 1px solid var(--surCordBorder); 
+    &:hover {
+        box-shadow: var(--accent-hover) 1px 1px 5px;
+    }
+}
+
+[class="ServerSidebar__ServerBase-sc-1lca5oe-0 JkpVA"] {
+    background-color: var(--surCordBackground2);
+    border-right: black solid 1px;
+}
+
+.gaQhZQ {
+  border-right: 1px black solid;
+}
+
+[class="Base-sc-yb16g4-0 iDeTmr"] {
+    background-color: var(--surCordGuilds);
+}
+
+[class="SidebarBase__GenericSidebarBase-sc-1dma6vq-1 dUCGFk"] {
+    background-color: var(--surCordBackground2);
+    border-left: 1px solid black;
+}
+.fWMCga,
+.jOPNWX {
+    background-color: var(--surCordBackground2);
+}
+
+[class="ServerHeader__ServerBanner-sc-15ursl9-0 dKFhRZ"] {
+    margin: 10px;
+    border-radius: 10px;
+    border: solid rgba(124, 124, 124, 1) 1px;
+    box-shadow: 1px 5px 15px #00000087;
+}
+.dKFhRZ .container {
+    background: transparent;
+}
+.dKFhRZ .container .title {
+    display: none;
+}
+
+.cnyIwU * {
+    display: inline-block;
+    font-weight: bolder;
+}
+
+._item_1avxi_1[data-active="true"] {
+    background-color: var(--accent-selected);
+}
+
+.bSmCBu div {
+    display: none;
+}
+
+.JumpToBottom__Bar-sc-v9kqir-0 > div:nth-child(1) {
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 30px;
+}
+
+.preact-context-menu .context-menu {
+    border: 1px solid var(--surCordBorder);
+    background-color: #00000069;
+    box-shadow: 1px 5px 15px #00000087;
+    transition: ease-out .2s;
+}
+}
+
+@-moz-document domain("revolt.chat") {
+/*
+01110011 01101111  01110100 01101000 01100101  01110011 01110110 01100111  01110111 01101111 01101110 01110100  01101100 01100101 01110100  01101101 01100101  01100010 01100101 
+                                                 
+ _|_|_|                                          
+   _|      _|_|_|    _|_|    _|_|_|      _|_|_|  
+   _|    _|        _|    _|  _|    _|  _|_|      
+   _|    _|        _|    _|  _|    _|      _|_|  
+ _|_|_|    _|_|_|    _|_|    _|    _|  _|_|_|    
+                                                 
+                                                 
+01101111 01110010  01101100 01100101 01110100  01101101 01100101  01100010 01100101  01101101 01100101  01110011 01101111  01101100 01100101 01110100  01101101 01100101  01110011 01100101 01100101 
+*/
+
+/* ---------- https://pixelarticons.com/ - SEE LICENSE HERE : https://github.com/halfmage/pixelarticons ----------- */
+
+[d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"],
+[d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"] {
+    d: path("M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z");
+    transform: scale(1.5);
+}
+
+[d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"] {
+    d: path("M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z");
+    transform: scale(1.4, 1.4)
+}
+
+[d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3 13-8 2 2-8 8-2-2 8z"] {
+    d: path("M19 2h2v2h-2V2Zm2 14V4h2v12h-2Zm0 0v2h-2v-2h2ZM1 4h2v12H1V4Zm2 12h2v2H3v-2ZM3 4h2V2H3v2Zm2 2h2v8H5V6Zm2 8h2v2H7v-2Zm0-8h2V4H7v2Zm10 0h2v8h-2V6Zm0 0h-2V4h2v2Zm0 8v2h-2v-2h2Zm-6-7h4v6h-2v9h-2v-9H9V7h2Zm0 4h2V9h-2v2Z");
+    d: path("M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z");
+    transform: scale(1.4, 1.4);
+}
+
+
+[d="m2.344 15.271 2 3.46a1 1 0 0 0 1.366.365l1.396-.806c.58.457 1.221.832 1.895 1.112V21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1.598a8.094 8.094 0 0 0 1.895-1.112l1.396.806c.477.275 1.091.11 1.366-.365l2-3.46a1.004 1.004 0 0 0-.365-1.366l-1.372-.793a7.683 7.683 0 0 0-.002-2.224l1.372-.793c.476-.275.641-.89.365-1.366l-2-3.46a1 1 0 0 0-1.366-.365l-1.396.806A8.034 8.034 0 0 0 15 4.598V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1.598A8.094 8.094 0 0 0 7.105 5.71L5.71 4.904a.999.999 0 0 0-1.366.365l-2 3.46a1.004 1.004 0 0 0 .365 1.366l1.372.793a7.683 7.683 0 0 0 0 2.224l-1.372.793c-.476.275-.641.89-.365 1.366zM12 8c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4z"] {
+    d: path("M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z");
+    transform: scale(1.4, 1.4);
+    fill: rgba(26, 129, 251, 1);
+}
+
+[d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"],
+[d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"] {
+    d: path( "M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z");
+    transform: scale(1.4, 1.4);
+}
+
+[d="M15 11h7v2h-7zm1 4h6v2h-6zm-2-8h8v2h-8zM4 19h10v-1c0-2.757-2.243-5-5-5H7c-2.757 0-5 2.243-5 5v1h2zm4-7c1.995 0 3.5-1.505 3.5-3.5S9.995 5 8 5 4.5 6.505 4.5 8.5 6.005 12 8 12z"] {
+    d: path("M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z");
+    transform: scale(1.5)
+}
+
+[d="m21.743 12.331-9-10c-.379-.422-1.107-.422-1.486 0l-9 10a.998.998 0 0 0-.17 1.076c.16.361.518.593.913.593h2v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-7h2a.998.998 0 0 0 .743-1.669z"] {
+    d: path( "M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z");
+    transform: scale(1.4, 1.4);
+}
+
+
+div.HeightPreservingContainer-sc-2lkyp5-0:nth-child(8) > a:nth-child(2) > div:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > foreignObject:nth-child(1) > div:nth-child(1) > svg:nth-child(1) > circle:nth-child(2) {
+    display: none;
+}
+}
