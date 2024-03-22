@@ -180,6 +180,15 @@ be used. I'm only keeping those here just for prosperity, really.
     box-shadow: 1px 5px 15px #00000087;
     transition: ease-out .2s;
 }
+
+._settings_t7t23_33 ._sidebar_t7t23_39 {
+    background-color: var(--surCordBackground2);
+    border-right: var(--surCordBorder) 1px solid;
+}
+
+._settings_t7t23_33 ._content_t7t23_40 {
+   background-color: var(--surCordBackground) !important;
+}
 }
 
 @-moz-document domain("revolt.chat") {
