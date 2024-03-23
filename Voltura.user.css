@@ -123,6 +123,7 @@ be used. I'm only keeping those here just for prosperity, really.
 [class="ServerSidebar__ServerBase-sc-1lca5oe-0 JkpVA"] {
     background-color: var(--surCordBackground2);
     border-right: black solid 1px;
+    border-radius: 0px;
 }
 
 .gaQhZQ {
